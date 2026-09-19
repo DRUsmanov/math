@@ -7,6 +7,6 @@ add_library(math::math ALIAS math)
 
 target_include_directories(math INTERFACE ${CMAKE_CURRENT_SOURCE_DIR}/include)
 
-target_include_directories(math PUBLIC
+target_include_directories(math INTERFACE
     $<BUILD_INTERFACE:${CMAKE_CURRENT_SOURCE_DIR}/include>
 )
